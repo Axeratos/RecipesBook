@@ -32,9 +32,7 @@ class Migration(migrations.Migration):
                 ("updated_at", models.DateTimeField(auto_now=True)),
                 (
                     "likes",
-                    models.ManyToManyField(
-                        related_name="likes", to=settings.AUTH_USER_MODEL
-                    ),
+                    models.ManyToManyField(related_name="likes", to=settings.AUTH_USER_MODEL),
                 ),
             ],
         ),
